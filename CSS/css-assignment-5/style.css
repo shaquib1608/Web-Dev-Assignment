@@ -1,0 +1,165 @@
+body{
+    background-color: rgb(83, 76, 82);
+}
+h1{
+    margin-left: 180px;
+}
+.main{
+display: grid;
+justify-content: center;
+}
+.box1{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+ 
+}
+.box-a{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 0, 170);
+    margin-left: 25px;
+    margin-right:50px;
+    margin-bottom: 50px;
+    transform: skewX(20deg);
+    box-shadow: 10px 10px 5px grey;
+    animation-name: b1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes b1 {
+    0%{
+        transform: skewX(40deg);
+    }
+    50%{
+        transform: skewX(-40deg);
+    }
+    100%{
+        transform: skewX(40deg);
+    }
+}
+.box2{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+}
+.box-b{
+    height: 150px;
+    width: 150px;
+    background-color:rgb(0, 0, 0) ;
+    margin-left: 25px;
+    margin-right:50px;
+    box-shadow: 10px 10px 5px grey;
+    margin-bottom: 50px;
+    transform: skewY(20deg);
+    animation-name: b2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes b2 {
+    0%{
+        transform: skewY(20deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+.box3{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+}
+.box-c{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(56, 126, 126);;
+    margin-left: 25px;
+    margin-right:50px;
+    margin-bottom: 50px;
+    transform: rotate(360deg);
+    box-shadow: 10px 10px 5px grey;
+    animation-name: b3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes b3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box4{
+    display: flex;
+    gap: 50px;
+    flex-direction:row;
+}
+.box-d{
+    height: 150px;
+    width: 150px;
+    margin-left: 25px;
+    box-shadow: 10px 10px 5px grey;
+    margin-right:50px ;
+}
+#d1{
+    background-color: skyblue;
+    transform: scaleY(1);
+    animation-name: d1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes d1 {
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+#d2{
+    background-color: brown;
+    transform: scaleX(1);
+    animation-name: d2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes d2 {
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+#d3{
+    background-color: green;
+    transform: rotate(0deg);
+    animation-name: d3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes d3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.h2{
+    margin-left: 230px;
+    color:black;
+}

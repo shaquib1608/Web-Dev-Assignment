@@ -1,0 +1,133 @@
+#menulogo{
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    display: block;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url('shara desert.jpg');
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 15px 30px;
+        }
+        .navbar .logo img {
+            height: 50px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+        .nav-links li a:hover {
+            color: #ff9800;
+        }
+ .main{
+    display: flex;
+    /* justify-content: space-be; */
+ }   
+ #Sahara{
+    font-size: 150px;
+    font-weight: bold;
+    /* margin-top: 500px; */
+ }  
+ .btn{
+    background-color:rgb(6, 6, 6);
+    color: white;
+    
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:20px;
+    cursor: pointer;
+ }  
+    .btn:hover{
+        background-color: rgb(107, 96, 96);
+        color: black;
+    }
+
+ .container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+    
+    gap: 10px;
+ }
+ 
+
+ .img1,.img2,.img3,.img4 {
+  
+height: 300px;
+width: 200px;
+border-radius: 15px;
+margin: 30px;
+background-image: url(./pic-1.png);
+color: white;
+padding-left: 9px;
+padding-top: 15px;
+font-family: 'Times New Roman', Times, serif;
+  
+}
+.img1{
+    background-image: url(./pic-1.png);
+    padding-left: 9px;
+}
+.img2{
+    background-image: url(./pic-2.png);
+    padding-left: 9px;
+}
+.img3{
+    background-image: url(./pic-3.png);
+}
+.img4{
+    background-image: url(./pic-4.png);
+}
+    .img1:hover{
+        background-color: rgb(107, 96, 96);
+        color: black;
+        transition: 0.5s;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px black;
+    }
+    .img2:hover{
+        background-color: rgb(107, 96, 96);
+        transition: 0.5s;
+        transform: scale(1.05);
+        color: black;
+         box-shadow: 0 0 20px black;
+    }
+    .img3:hover{
+        background-color: rgb(107, 96, 96);
+        transition: 0.5s;
+        transform: scale(1.05);
+        color: black;
+         box-shadow: 0 0 20px black;
+    }
+    .img4:hover{
+        background-color: rgb(107, 96, 96);
+        transition: 0.5s;
+        transform: scale(1.05);
+        color: black;
+         box-shadow: 0 0 20px black;
+    }

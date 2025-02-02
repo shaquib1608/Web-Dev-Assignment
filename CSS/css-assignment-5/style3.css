@@ -1,0 +1,141 @@
+body{
+    background: linear-gradient(to right, orange,white,green);
+}
+.main1{
+    background-image: url(./sky.jpg);
+    margin-top: -20px;
+}
+.border{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size:18px ;
+    margin-top: 30px;
+}
+.h1{
+    background-color: rgb(244, 178, 54);
+}
+.h2{
+    background-color: white;
+}
+.h3{
+    background-color: green;
+}
+.sun{
+    height: 80px;
+    width: 80px;
+}
+.cityy{
+    display: flex;
+    
+}
+.city{
+    height: 250px;
+    
+    
+
+   
+}
+.city{
+    position: relative;
+    background-repeat: repeat;
+    
+     animation-name: city;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes city{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+} 
+
+.road{
+    position: relative;
+    background-repeat: repeat;
+    
+     animation-name: road;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ @keyframes road{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+} 
+
+.car{
+    position: absolute;
+    margin-top: -385px;
+    margin-left: 400px;
+}
+
+.car1{
+    height: 150px;
+    width: 340px;
+}
+.wheel1{
+    position: relative;
+    margin-top: -304px;
+    margin-left: 430px;
+
+}
+.wheel-1{
+    height: 60px;
+    width: 60px;
+    animation-name: wheel-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wheel-1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel2{
+    position: relative;
+    margin-top: -64px;
+    margin-left: 638px;
+}
+.wheel-2{
+    height: 60px;
+    width: 60px;
+    animation-name: wheel-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes wheel-2 {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.flag{
+    margin-top: -140px;
+    margin-left: 668px;
+    
+}
+
+.flagg{
+    height: 65px;
+    width: 65px;
+}
+
+
