@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Assignment-4</h1>
+    <h3>Q-1</h3>
+    <script>
+      function countCharacters(S) {
+        let countA = 0;
+        let countD = 0;
+        for (let char of S) {
+          if (char === "A") {
+            countA++;
+          } else if (char === "D") {
+            countD++;
+          }
+        }
+        return [countA, countD];
+      }
+      document.write("Q1:", countCharacters("AbaDd"));
+    </script>
+
+    <h3>Q-2</h3>
+    <script>
+      function Count_Head(S) {
+        const counts = {};
+        for (const char of S) {
+          counts[char] = (counts[char] || 0) + 1;
+        }
+        const result = [];
+        const sortedChars = Object.keys(counts).sort();
+        for (const char of sortedChars) {
+          if (counts[char] > 1) {
+            result.push(char + counts[char]);
+          }
+        }
+        return result.join("");
+      }
+      document.write("Q2:", Count_Head("prepbytes"));
+    </script>
+
+    <h3>Q-3</h3>
+    <script>
+      function Count_Vowel(S) {
+        const vowels = "aeiouAEIOU";
+        let count = 0;
+        for (const char of S) {
+          if (vowels.includes(char)) {
+            count++;
+          }
+        }
+        return count;
+      }
+      document.write("Q3:", Count_Vowel("Prepbytes"));
+    </script>
+
+    <h3>Q-4</h3>
+    <script>
+      function Concatenate_Strings(S1, S2) {
+        return S1 + S2;
+      }
+      document.write("Q4:", Concatenate_Strings("Prep", "bytes"));
+    </script>
+
+    <h3>Q-5</h3>
+    <script>
+      function findLength(S) {
+        return S.length;
+      }
+      document.write("Q5:", findLength("CeDqe"));
+    </script>
+
+    <h3>Q-6</h3>
+    <script>
+      function Game_Winner(S) {
+        let countA = 0;
+        let countD = 0;
+        for (let char of S) {
+          if (char === "A") {
+            countA++;
+          } else if (char === "D") {
+            countD++;
+          }
+        }
+        if (countA > countD) {
+          return "Aditya";
+        } else if (countD > countA) {
+          return "Danish";
+        } else {
+          return "Draw";
+        }
+      }
+      document.write("Q6:", Game_Winner("ADDAAADDDDD"));
+    </script>
+
+    <h3>Q-7</h3>
+    <script>
+      function joinStrings(S, P) {
+        return S + P;
+      }
+      document.write("Q7:", joinStrings("PrepBytes", "Technologies"));
+    </script>
+
+    <h3>Q-8</h3>
+    <script>
+      function Plain_Check(S) {
+        const reversed = S.split("").reverse().join("");
+        return S === reversed;
+      }
+      document.write("Q8:", Plain_Check("Naman"));
+    </script>
+
+    <h3>Q-9</h3>
+    <script>
+      function Reverse_String(S) {
+        return S.split("").reverse().join("");
+      }
+      document.write("Q9:", Reverse_String("I am utkarsh raj"));
+    </script>
+
+    <h3>Q-10</h3>
+    <script>
+      function String_Match(S1, S2) {
+        return S1 === S2 ? "YES" : "NO";
+      }
+      document.write("Q10:", String_Match("Prepbytes", "Prepbytes"));
+    </script>
+
+    <h3>Q-11</h3>
+    <script>
+      function Replace(S, pattern, text) {
+        return S.replaceAll(pattern, text);
+      }
+      document.write(
+        "Q11:",
+        Replace("Hi, I am You. You Prepbytes", /You/g, "Prepbytes")
+      );
+    </script>
+
+    <h3>Q-12</h3>
+    <script>
+      function Split_the_String(S) {
+        return S.split(" ");
+      }
+      document.write("Q12:", Split_the_String("I am utkarsh raj"));
+    </script>
+
+    <h3>Q-13</h3>
+    <script>
+      function Count_Vowels(S) {
+        return (S.match(/[aeiouAEIOU]/g) || []).length;
+      }
+      function Count_Consonants(S) {
+        return (S.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g) || [])
+          .length;
+      }
+      document.write(
+        "Q13 Vowels:",
+        Count_Vowels("Prepbytes"),
+        "Consonants:",
+        Count_Consonants("Prepbytes")
+      );
+    </script>
+  </body>
+</html>
